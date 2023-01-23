@@ -1,0 +1,31 @@
+{
+  "name": "x19Push",
+  "version": "1.0.9",
+  "description": "《我的世界》中国版组件评论/开发者留言板推送bot",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "app": "node ./app.js",
+    "start": "pm2 start ./config/system/pm2.json",
+    "stop": "pm2 stop x19push",
+    "restart": "pm2 restart x19push"
+  },
+  "keywords": [
+    "Minecraft",
+    "Netease",
+    "push",
+    "bot",
+    "qq",
+    "guild"
+  ],
+  "author": "CodePwn",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "lodash": "^4.17.21",
+    "node-schedule": "^2.1.0",
+    "oicq-guild": "^0.1.0",
+    "pm2": "^5.2.0",
+    "sqlite3": "^5.0.8"
+  }
+}
